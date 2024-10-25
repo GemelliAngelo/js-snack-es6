@@ -8,6 +8,29 @@
 
 // ! ESECUZIONE
 
+let bikes = [
+  {
+    name: "Torpado",
+    weight: "10kg",
+  },
+  {
+    name: "Between",
+    weight: "15kg",
+  },
+  {
+    name: "Ktm",
+    weight: "13kg",
+  },
+  {
+    name: "Kawasaki",
+    weight: "8kg",
+  },
+  {
+    name: "Bianchi",
+    weight: "18kg",
+  },
+];
+
 // ! CONSEGNA
 
 // # Snack 2
