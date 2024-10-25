@@ -66,6 +66,8 @@ console.log(`La bici più leggera pesa ${lightestBikevalue} kg`);
 // * Generare numeri random al posto degli 0 nelle proprietà "punti" fatti e "falli subiti".
 // * Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+// ! ESECUZIONE
+
 const randomizer = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
 
@@ -104,8 +106,6 @@ teams.forEach((team) => {
 
 console.log(teamsResult);
 
-// ! ESECUZIONE
-
 // ! CONSEGNA
 
 // # Snack 3 (Bonus)
@@ -114,3 +114,18 @@ console.log(teamsResult);
 // * La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 
 // ! ESECUZIONE
+
+const numbers = [4, 12, 18, 9, 15, 2, 6];
+console.log(numbers);
+
+const getMiddleValues = (array = [], a, b) => {
+  const middleValues = [];
+  for (let i = 0; i < array.length; i++) {
+    if (i > array.indexOf(a) && i < array.indexOf(b)) {
+      middleValues.push(array[i]);
+    }
+  }
+  return middleValues;
+};
+
+console.log(getMiddleValues(numbers, 12, 2));
