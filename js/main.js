@@ -46,6 +46,16 @@ let bikes = [
   },
 ];
 
+const bikeWeightsValueArray = [];
+
+bikes.forEach((bike) => {
+  bikeWeightsValueArray.push(bike.weight.value);
+});
+
+const lightestBikevalue = Math.min(...bikeWeightsValueArray);
+
+console.log(`La bici più leggera pesa ${lightestBikevalue} kg`);
+
 // ! CONSEGNA
 
 // # Snack 2
