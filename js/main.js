@@ -66,7 +66,10 @@ console.log(`La bici più leggera pesa ${lightestBikevalue} kg`);
 // * Generare numeri random al posto degli 0 nelle proprietà "punti" fatti e "falli subiti".
 // * Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
-let soccerTeams = [
+const randomizer = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1) + min);
+
+let teams = [
   {
     name: "Milan",
     points: 0,
@@ -88,6 +91,18 @@ let soccerTeams = [
     fouls: 0,
   },
 ];
+
+let teamsResult = [];
+
+teams.forEach((team) => {
+  team.points = randomizer(0, 9);
+  team.fouls = randomizer(0, 5);
+
+  delete team.points;
+  teamsResult.push(team);
+});
+
+console.log(teamsResult);
 
 // ! ESECUZIONE
 
