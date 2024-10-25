@@ -11,23 +11,38 @@
 let bikes = [
   {
     name: "Torpado",
-    weight: "10kg",
+    weight: {
+      value: 10,
+      unit: "kg",
+    },
   },
   {
     name: "Between",
-    weight: "15kg",
+    weight: {
+      value: 15,
+      unit: "kg",
+    },
   },
   {
     name: "Ktm",
-    weight: "13kg",
+    weight: {
+      value: 13,
+      unit: "kg",
+    },
   },
   {
     name: "Kawasaki",
-    weight: "8kg",
+    weight: {
+      value: 8,
+      unit: "kg",
+    },
   },
   {
     name: "Bianchi",
-    weight: "18kg",
+    weight: {
+      value: 18,
+      unit: "kg",
+    },
   },
 ];
 
