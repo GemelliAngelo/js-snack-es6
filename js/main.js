@@ -129,3 +129,5 @@ const getMiddleValues = (array = [], a, b) => {
 };
 
 console.log(getMiddleValues(numbers, 12, 2));
+
+// # HO IGNORATO LA CONDIZIONE a < b PERCHÉ MI SEMBRAVA PIÙ GIUSTO POTER USARE UN ARRAY DI NUMERI/STRINGHE QUALUNQUE
